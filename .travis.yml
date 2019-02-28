@@ -1,0 +1,16 @@
+language: csharp
+
+git:
+  depth: 1
+
+mono: none
+dotnet: 2.1
+  
+env:
+    - SOLUTION: Homework1/Homework1.sln
+    - SOLUTION: Homework2/Homework2.sln
+
+script:
+    - dotnet test $SOLUTION
+
+
